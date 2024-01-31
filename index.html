@@ -28,6 +28,16 @@
       justify-content: center;
       gap: 4rem;
     }
+
+    @media (max-width: 768px) {
+      .links {
+        flex-direction: column;
+      }
+
+      .separator {
+        display: none;
+      }
+    }
   </style>
 </head>
 
@@ -38,13 +48,13 @@
       <div>
         <a href="https://stefanheinemann.ch">Photography</a>
       </div>
-      <div>
+      <div class="separator">
         |
       </div>
       <div>
         <a href="https://bernklang.netlify.app">Bernklang</a>
       </div>
-      <div>
+      <div class="separator">
         |
       </div>
       <div>
