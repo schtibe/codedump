@@ -1,0 +1,43 @@
+body {
+  font-size: 24px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  text-align: center;
+}
+
+.blog > div {
+  max-width: 768px;
+  margin: auto;
+}
+
+.blog section {
+  margin-top: 6rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+@media (max-width: 768px) {
+  .links {
+    flex-direction: column;
+  }
+
+  .separator {
+    display: none;
+  }
+}
