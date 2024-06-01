@@ -1,5 +1,38 @@
+@font-face {
+  font-family: "Urbanist";
+  src: url(fonts/urbanist-latin-400-normal.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url(fonts/playfair-display-latin-400-normal.woff) format("woff");
+}
+
 body {
   font-size: 24px;
+  font-family: Urbanist, sans-serif;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+h2,
+h3 {
+  font-family: Playfair Display, serif;
+}
+
+h3 a {
+  text-decoration: none;
+}
+
+h3 a:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: #52525b;
 }
 
 .home {
@@ -8,6 +41,7 @@ body {
   justify-content: center;
   justify-items: center;
   height: 100vh;
+  margin-top: -100px;
 }
 
 .main {
