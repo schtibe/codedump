@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "serve": "eleventy --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
