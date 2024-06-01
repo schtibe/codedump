@@ -1,5 +1,5 @@
 ---
-layout: layout.liquid
+layout: post.liquid
 blogTitle: Start a Blog with Eleventy
 tags: blog
 ---
