@@ -20,7 +20,9 @@ h2 {
 
 h2,
 h3 {
-  font-family: Playfair Display, serif;
+  font-family:
+    Playfair Display,
+    serif;
 }
 
 h3 a {
@@ -58,6 +60,10 @@ a {
 
 .blog section {
   margin-top: 6rem;
+}
+
+.blog iframe {
+  margin-top: 2rem;
 }
 
 .links {
