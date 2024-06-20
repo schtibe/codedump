@@ -1,6 +1,6 @@
 ---
 layout: post.liquid
-blogTitle: Sounds of the Forest
+title: Sounds of the Forest
 tags:
   - blog
   - world

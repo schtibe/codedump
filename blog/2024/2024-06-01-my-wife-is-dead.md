@@ -1,6 +1,6 @@
 ---
 layout: post.liquid
-blogTitle: I love my wife, my wife is dead
+title: I love my wife, my wife is dead
 tags:
   - blog
   - life

@@ -1,6 +1,6 @@
 ---
 layout: post.liquid
-blogTitle: Start a Blog with Eleventy
+title: Start a Blog with Eleventy
 tags:
   - blog
   - code
