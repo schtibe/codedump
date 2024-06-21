@@ -1,6 +1,6 @@
 ---
 layout: post.liquid
-title: I hacked a train toilet
+title: '"I hacked a train toilet"'
 tags:
   - blog
   - tech
