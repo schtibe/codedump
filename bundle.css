@@ -100,3 +100,19 @@ a {
     display: none;
   }
 }
+
+pre:has(code) {
+  margin-top: 2rem;
+  border-top: 1px solid rgb(196, 196, 196);
+  border-bottom: 1px solid rgb(196, 196, 196);
+  background-color: black;
+  color: white;
+}
+
+code {
+  display:inline-block;
+  padding: 1rem 0;
+  font-family: 'monospace';
+  font-size: 0.95rem;
+  margin-left: 1rem;
+}
