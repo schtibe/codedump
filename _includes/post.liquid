@@ -10,9 +10,11 @@
         <div>
             <h1>{{ title }}</h1>
 
-            {{ date }}
+            <em class="date">{{ page.date | postDate }}</em>
 
-            {{ content }}
+            <div>
+                {{ content }}
+            </div>
         </div>
     </body>
 </html>
