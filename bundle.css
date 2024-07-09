@@ -8,8 +8,11 @@
   src: url(fonts/playfair-display-latin-400-normal.woff) format("woff");
 }
 
-body {
+html {
   font-size: 24px;
+}
+
+body {
   font-family: Urbanist, sans-serif;
 }
 
@@ -59,11 +62,11 @@ a {
 }
 
 .blog section {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .blog iframe {
-  margin-top: 2rem;
+  margin-top: 1rem;
   max-width: 95%;
 }
 
@@ -91,6 +94,10 @@ a {
   gap: 4rem;
 }
 
+.date {
+  font-size: 0.8rem;
+}
+
 @media (max-width: 768px) {
   .links {
     flex-direction: column;
@@ -102,7 +109,7 @@ a {
 }
 
 pre:has(code) {
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-top: 1px solid rgb(196, 196, 196);
   border-bottom: 1px solid rgb(196, 196, 196);
   background-color: black;
@@ -111,8 +118,8 @@ pre:has(code) {
 
 code {
   display:inline-block;
-  padding: 1rem 0;
+  padding: 0.8rem 0;
   font-family: 'monospace';
   font-size: 0.95rem;
-  margin-left: 1rem;
+  margin-left: 0.8rem;
 }
