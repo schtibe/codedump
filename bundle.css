@@ -99,6 +99,12 @@ a {
   font-size: 0.8rem;
 }
 
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 @media (max-width: 768px) {
   .links {
     flex-direction: column;

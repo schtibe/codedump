@@ -1,6 +1,9 @@
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
+	// Values can be static:
+	eleventyConfig.addGlobalData("pageTitle", "codedump.ch");
+
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toISODate()
   });

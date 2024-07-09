@@ -8,10 +8,12 @@
     </head>
     <body class="blog">
         <div>
-            <h1>codedump.ch</h1>
-            <h3>{{ title }}</h3>
+            <h1>{{ pageTitle }}</h1>
 
-            <em class="date">{{ page.date | postDate }}</em>
+            <div class="title">
+                <h3>{{ title }}</h3>
+                <em class="date">{{ page.date | postDate }}</em>
+            </div>
 
             <div>
                 {{ content }}

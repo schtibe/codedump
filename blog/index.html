@@ -1,13 +1,14 @@
 ---
 layout: blog.liquid
-pageTitle: codedump.ch
 ---
 
 {% for post in collections.blog reversed %}
 
 <section>
-  <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-  <em class="date">{{ post.date | postDate }}</em>
+  <div class="title">
+    <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+    <em class="date">{{ post.date | postDate }}</em>
+  </div>
 
   {% if post.data.layout == "ytpost.liquid" %}
 
