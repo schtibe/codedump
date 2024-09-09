@@ -1,5 +1,5 @@
 ---
-layout: ytpost.liquid
+layout: blog.liquid
 title: Skate Short Film
 videoKey: tM6rF_TCiNc
 tags:
@@ -7,3 +7,5 @@ tags:
   - video
   - skate
 ---
+
+{% include 'ytplayer', videoKey: post.data.videoKey %}

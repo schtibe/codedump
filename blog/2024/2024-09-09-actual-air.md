@@ -9,3 +9,5 @@ tags:
   - outdoors
   - film
 ---
+
+{% include "vimeoplayer", videoKey: videoKey %}

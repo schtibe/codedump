@@ -1,26 +1,45 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-	      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Codedump</title>
-        <link rel="stylesheet" href="/bundle.css">
-    </head>
-    <body class="blog">
-        <div>
-            <h1>{{ pageTitle }}</h1>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codedump</title>
+    <link rel="stylesheet" href="/bundle.css">
+    <script src="https://player.vimeo.com/api/player.js"></script>
+  </head>
+  <body class="blog">
+    <div>
+      <h1>{{ pageTitle }}</h1>
 
-            <h2>
-            Code, Arts, Photography, everything that interests me.
-            </h2>
+      <h2>Code, Arts, Photography, everything that interests me.</h2>
 
-            {{ content }}
-        </div>
+      {% for post in collections.blog reversed %}
+        <section>
+          <div class="title">
+            <h3>
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </h3>
+            <span class="date">{{ post.date | postDate }}</span>
+          </div>
 
-        <footer>
+          {% if post.data.layout == 'ytpost.liquid' %}
+            {% include 'ytplayer', videoKey: post.data.videoKey %}
+
+          {% elsif post.data.layout == 'vimeo.liquid' %}
+            {% include 'vimeoplayer', videoKey: post.data.videoKey %}
+          {% else %}
             <div>
-                <a href="https://stefanheinemann.ch/kontakt/">Contact</a>
+              {{ post.content }}
             </div>
-        </footer>
-    </body>
+          {% endif %}
+        </section>
+      {% endfor %}
+    </div>
+
+    <footer>
+      <div>
+        <a href="https://stefanheinemann.ch/kontakt/">Contact</a>
+      </div>
+    </footer>
+  </body>
 </html>
