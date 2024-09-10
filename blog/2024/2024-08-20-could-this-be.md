@@ -7,4 +7,4 @@ tags:
   - music
 ---
 
-{% include 'ytplayer', videoKey: post.data.videoKey %}
+{% include 'ytplayer', videoKey: videoKey %}

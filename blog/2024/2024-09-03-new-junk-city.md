@@ -1,5 +1,5 @@
 ---
-layout: blog.liquid
+layout: post.liquid
 title:  New Junk City live at Toas and Jam Studio
 videoKey: KjRnvZVIbBI
 tags:
@@ -7,4 +7,4 @@ tags:
   - music
 ---
 
-{% include 'ytplayer', videoKey: post.data.videoKey %}
+{% include 'ytplayer', videoKey: videoKey %}

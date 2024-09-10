@@ -1,5 +1,5 @@
 ---
-layout: blog.liquid
+layout: post.liquid
 title:  Is Andy Anderson The Most Versatile Skater Ever?
 videoKey: wKjzij5DP7E
 tags:
@@ -8,4 +8,4 @@ tags:
   - life
 ---
 
-{% include 'ytplayer', videoKey: post.data.videoKey %}
+{% include 'ytplayer', videoKey: videoKey %}
