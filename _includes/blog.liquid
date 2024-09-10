@@ -21,17 +21,9 @@
             </h3>
             <span class="date">{{ post.date | postDate }}</span>
           </div>
-
-          {% if post.data.layout == 'ytpost.liquid' %}
-            {% include 'ytplayer', videoKey: post.data.videoKey %}
-
-          {% elsif post.data.layout == 'vimeo.liquid' %}
-            {% include 'vimeoplayer', videoKey: post.data.videoKey %}
-          {% else %}
-            <div>
-              {{ post.content }}
-            </div>
-          {% endif %}
+          <div>
+            {{ post.content }}
+          </div>
         </section>
       {% endfor %}
     </div>
