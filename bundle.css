@@ -8,6 +8,11 @@
   src: url(fonts/playfair-display-latin-400-normal.woff) format("woff");
 }
 
+@font-face {
+  font-family: "Code";
+  src: url(fonts/FontWithASyntaxHighlighter-Regular.woff2) format("woff2")
+}
+
 html {
   font-size: 24px;
 }
@@ -137,8 +142,8 @@ pre:has(code) {
 code {
   display:inline-block;
   padding: 0.8rem 0;
-  font-family: 'monospace';
   font-size: 0.95rem;
   margin-left: 0.8rem;
   font-size: 0.8rem;
+  font-family: Code, 'monospace';
 }

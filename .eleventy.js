@@ -19,4 +19,9 @@ module.exports = function (eleventyConfig) {
     "node_modules/@fontsource/urbanist/files/urbanist-latin-400-normal.woff":
       "fonts/urbanist-latin-400-normal.woff",
   });
+
+  eleventyConfig.addPassthroughCopy({
+    "FontWithASyntaxHighlighter-Regular.woff2":
+    "fonts/FontWithASyntaxHighlighter-Regular.woff2"
+  })
 };
