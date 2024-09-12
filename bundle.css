@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Code";
-  src: url(fonts/FontWithASyntaxHighlighter-Regular.woff2) format("woff2")
+  src: url(fonts/FontWithASyntaxHighlighter-Regular.woff2) format("woff2");
 }
 
 html {
@@ -140,10 +140,41 @@ pre:has(code) {
 }
 
 code {
-  display:inline-block;
+  display: inline-block;
   padding: 0.8rem 0;
   font-size: 0.95rem;
   margin-left: 0.8rem;
   font-size: 0.8rem;
-  font-family: Code, 'monospace';
+  font-family: Code, "monospace";
+}
+
+blockquote {
+  position: relative;
+  color: rgb(109, 108, 108);
+  margin: 0 0 20px;
+  padding: 0 20px 0 45px;
+  border-left: 0.2em solid #7d3d3d;
+}
+
+blockquote p {
+  font-size: 0.95rem;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote:before {
+  content: "\201C";
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-size: 2rem;
+}
+
+blockquote:after {
+  content: "\201D";
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  font-size: 2rem;
 }
