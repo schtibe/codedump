@@ -86,6 +86,10 @@ footer > div {
   max-width: 95%;
 }
 
+.blog .goBack {
+  margin-top: 3rem;
+}
+
 .iframe-container {
   position: relative;
   overflow: hidden;
