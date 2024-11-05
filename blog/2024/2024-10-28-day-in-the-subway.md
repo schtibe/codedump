@@ -1,6 +1,7 @@
 ---
 layout: post.liquid
 title: Anne spends a day in the subway
+description: Anne kadet spends a full day in the subway of NYC and documents her journey.
 tags:
   - blog
   - noticing
