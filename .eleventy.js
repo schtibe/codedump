@@ -1,14 +1,29 @@
 const { DateTime } = require("luxon");
+// const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+
+// const markdownItEleventyImg = require("markdown-it-eleventy-img");
+const markdownIt = require("markdown-it");
+const markdownItAttrs = require("markdown-it-attrs");
 
 module.exports = function (eleventyConfig) {
-	// Values can be static:
-	eleventyConfig.addGlobalData("pageTitle", "codedump.ch");
+  // Values can be static:
+  eleventyConfig.addGlobalData("pageTitle", "codedump.ch");
+
+  eleventyConfig.setLibrary(
+    "md",
+    markdownIt({
+      html: true,
+      breaks: true,
+      linkify: true,
+    }),
+  );
 
   eleventyConfig.addFilter("postDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toISODate()
+    return DateTime.fromJSDate(dateObj).toISODate();
   });
 
   eleventyConfig.addPassthroughCopy("bundle.css");
+  eleventyConfig.addPassthroughCopy("blog/2024/images");
 
   eleventyConfig.addPassthroughCopy({
     "node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff":
@@ -22,6 +37,30 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({
     "FontWithASyntaxHighlighter-Regular.woff2":
-    "fonts/FontWithASyntaxHighlighter-Regular.woff2"
-  })
+      "fonts/FontWithASyntaxHighlighter-Regular.woff2",
+  });
+
+  // eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+  //   // which file extensions to process
+  //   extensions: "html",
+  //   // optional, output image formats
+  //   formats: ["jpg", "webp"],
+  //   // optional, output image widths
+  //   widths: ["auto", 400, 800],
+  //   // optional, attributes assigned on <img> override these values.
+  //   defaultAttributes: {
+  //     loading: "lazy",
+  //     sizes: "100vw",
+  //     decoding: "async",
+  //   },
+  // });
+
+  const markdownItOptions = {
+    html: true,
+    breaks: true,
+    linkify: true,
+  };
+
+  const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
+  eleventyConfig.setLibrary("md", markdownLib);
 };
