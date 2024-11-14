@@ -1,10 +1,17 @@
+---
+pagination:
+  data: collections.blog
+  size: 10
+  reverse: true
+  alias: posts
+---
 {% layout 'layout' %}
 {% block content %}
 <h1>{{ pageTitle }}</h1>
 
 <h2>This is where I collect things that interest and inspire me.</h2>
 
-{% for post in collections.blog reversed %}
+{% for post in posts %}
   <section>
     <div class="title">
       <h3>
@@ -17,5 +24,20 @@
     </div>
   </section>
 {% endfor %}
+
+<ol class="pagination">
+  {%- for pageEntry in pagination.pages %}
+    <li>
+      <a
+        href="{{ pagination.hrefs[ forloop.index0 ] }}"
+        {% if page.url == pagination.hrefs[forloop.index0] %}
+          aria-current="page"
+        {% endif %}
+      >
+        {{- forloop.index -}}
+      </a>
+    </li>
+  {%- endfor %}
+</ol>
 
 {% endblock %}

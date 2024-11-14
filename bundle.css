@@ -44,6 +44,21 @@ h3 a:hover {
 }
 
 a {
+  /* background-color: #52525b;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 0.2rem;
+  color: white; */
+  color: #52525b;
+}
+
+a:hover {
+  background-color: #52525b;
+  color: white;
+}
+
+h3 a {
+  background-color: unset;
   color: #52525b;
 }
 
@@ -185,4 +200,29 @@ blockquote:after {
   right: 10px;
   top: 50px;
   font-size: 2rem;
+}
+
+
+.pagination {
+  margin: 0;
+  margin-top: 4rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.pagination li {
+  padding-right: 2rem;
+}
+
+.pagination li a {
+  display: inline-block;
+  width: 1rem;
+  text-align: center;
+}
+
+.pagination li a[aria-current] {
+  background-color: #52525b;
+  color: white;
+  text-decoration: none;
 }
