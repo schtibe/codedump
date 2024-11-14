@@ -2,6 +2,7 @@
 layout: post.liquid
 title: My Neighbour Totoro
 description: Very nice shot from My neighbour Totoro
+previewImage: /blog/2024/images/totoro.jpg
 tags:
   - movies
   - blog
