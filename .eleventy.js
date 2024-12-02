@@ -22,6 +22,14 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toISODate();
   });
 
+  eleventyConfig.addFilter("urlencode", function (str) {
+    return encodeURI(str);
+  });
+
+  eleventyConfig.addFilter("thumb_screenshot", function (str) {
+    return encodeURIComponent("https://codedump.ch/" + str);
+  });
+
   eleventyConfig.addPassthroughCopy("bundle.css");
   eleventyConfig.addPassthroughCopy("blog/2024/images");
 

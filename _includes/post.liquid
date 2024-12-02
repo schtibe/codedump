@@ -30,6 +30,8 @@
 <meta property="og:description" content="Blogpost: {{ description }}">
 {% if previewImage %}
 <meta property="og:image" content="{{ previewImage }}">
+{% else %}
+<meta property="og:image" content="https://v1.screenshot.11ty.dev/{{page.url | thumb_screenshot}}">
 {% endif %}
 
 <!-- Twitter Meta Tags -->
@@ -43,6 +45,8 @@
 <meta name="twitter:description" content="Blogpost: {{ description }}">
 {% if previewImage %}
 <meta name="twitter:image" content="{{ previewImage }}">
+{% else %}
+<meta property="og:image" content="https://v1.screenshot.11ty.dev/{{page.url | thumb_screenshot}}">
 {% endif %}
 
 {% endblock %}
