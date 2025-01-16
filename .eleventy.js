@@ -71,4 +71,14 @@ module.exports = function (eleventyConfig) {
 
   const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
   eleventyConfig.setLibrary("md", markdownLib);
+
+  eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
+    return (tags || []).filter(
+      (tag) => ["all", "posts", "blog"].indexOf(tag) === -1,
+    );
+  });
+
+  eleventyConfig.addFilter("getKeys", (target) => {
+    return Object.keys(target);
+  });
 };

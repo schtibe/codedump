@@ -1,0 +1,14 @@
+{% layout 'layout' %}
+{% block content %}
+<h1>Tags</h1>
+
+<ul>
+  {% assign tags = collections | getKeys | filterTagList %}
+  {% for tag in tags %}
+    <li>
+      <a href="{{ tag | slugify}}" class="post-tag">{{ tag }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
