@@ -2,12 +2,21 @@
 {% block "content" %}
       <h1>{{ pageTitle }}</h1>
 
+
       <div class="title">
         <h3>{{ title }}</h3>
         <span class="date">{{ page.date | postDate }}</span>
       </div>
 
-      <div>
+      <div class="tagList">
+        <ul>
+        {% for tag in tags %}
+          <li><a href="/blog/tags/{{ tag | slugify}}" class="post-tag">{{tag }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+
+      <div class="postContent">
         {{ content }}
       </div>
     </div>
