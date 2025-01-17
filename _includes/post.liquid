@@ -10,7 +10,8 @@
 
       <div class="tagList">
         <ul>
-        {% for tag in tags %}
+        {% assign taglist = tags | filterTagList %}
+        {% for tag in taglist %}
           <li><a href="/blog/tags/{{ tag | slugify}}" class="post-tag">{{tag }}</a></li>
         {% endfor %}
         </ul>
