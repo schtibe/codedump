@@ -3,7 +3,7 @@ layout: post.liquid
 title: Start a Blog with Eleventy
 tags:
   - blog
-  - code
+  - coding
 ---
 
 [https://www.elletownsend.co.uk/blog/posts/blog-with-eleventy/](https://www.elletownsend.co.uk/blog/posts/blog-with-eleventy/)

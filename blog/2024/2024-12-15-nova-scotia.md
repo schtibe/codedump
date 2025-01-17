@@ -7,6 +7,7 @@ tags:
   - blog
   - travel
   - experience
+  - outdoors
 ---
 
 {% include 'ytplayer', videoKey: videoKey %}

@@ -7,6 +7,7 @@ videoKey: o_DLwimJS_g
 tags:
   - blog
   - skate
+  - outdoors
 ---
 
 {% include 'ytplayer', videoKey: videoKey %}

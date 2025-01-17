@@ -1,13 +1,12 @@
 ---
 layout: post.liquid
-title:  Actual Air
+title: Actual Air
 videoKey: 893773360
 tags:
   - blog
-  - video
+  - film
   - life
   - outdoors
-  - film
 ---
 
 {% include "vimeoplayer", videoKey: videoKey %}

@@ -3,7 +3,7 @@ layout: post.liquid
 title: Extreme Sound Stretching
 tags:
   - blog
-  - code
+  - coding
   - music
 ---
 

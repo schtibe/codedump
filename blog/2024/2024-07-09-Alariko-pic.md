@@ -1,9 +1,10 @@
 ---
 layout: post.liquid
-title: Picture from Alariko 
+title: Picture from Alariko
 tags:
   - blog
   - arts
+  - drawing
 ---
 
 ![Picture from Alariko](https://pbs.twimg.com/media/GR_NwX0X0AAoS-t?format=jpg&name=small "Picture from Alariko")

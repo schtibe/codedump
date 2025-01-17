@@ -5,7 +5,7 @@ description: A drawing by Tomas Cerkala of a room from above
 previewImage: /blog/2024/images/tomas-cerkala.jpg
 tags:
   - blog
-  - art
+  - arts
   - drawing
 ---
 
