@@ -8,14 +8,7 @@
         <span class="date">{{ page.date | postDate }}</span>
       </div>
 
-      <div class="tagList">
-        <ul>
-        {% assign taglist = tags | filterTagList %}
-        {% for tag in taglist %}
-          <li><a href="/blog/tags/{{ tag | slugify}}" class="post-tag">{{tag }}</a></li>
-        {% endfor %}
-        </ul>
-      </div>
+      {% include 'taglist', tags: tags %}
 
       <div class="postContent">
         {{ content }}

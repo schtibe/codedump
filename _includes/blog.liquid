@@ -19,6 +19,9 @@ pagination:
       </h3>
       <span class="date">{{ post.date | postDate }}</span>
     </div>
+
+    {% include 'taglist', tags: post.data.tags %}
+
     <div>
       {{ post.content }}
     </div>
