@@ -32,6 +32,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("bundle.css");
   eleventyConfig.addPassthroughCopy("blog/2024/images");
+  eleventyConfig.addPassthroughCopy("blog/2025/images");
 
   eleventyConfig.addPassthroughCopy({
     "node_modules/@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff":
