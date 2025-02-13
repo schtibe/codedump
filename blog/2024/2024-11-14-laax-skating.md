@@ -6,7 +6,7 @@ previewImage: http://i3.ytimg.com/vi/o_DLwimJS_g/hqdefault.jpg
 videoKey: o_DLwimJS_g
 tags:
   - blog
-  - skate
+  - skateboarding
   - outdoors
 ---
 

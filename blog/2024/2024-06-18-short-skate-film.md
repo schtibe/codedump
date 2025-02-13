@@ -5,7 +5,7 @@ videoKey: tM6rF_TCiNc
 tags:
   - blog
   - film
-  - skate
+  - skateboarding
 ---
 
 {% include 'ytplayer', videoKey: videoKey %}
