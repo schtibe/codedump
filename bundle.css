@@ -178,7 +178,7 @@ code {
 blockquote {
   position: relative;
   color: rgb(109, 108, 108);
-  margin: 0 0 20px;
+  margin: 1rem 0 20px;
   padding: 0 20px 0 45px;
   border-left: 0.2em solid #7d3d3d;
 }
