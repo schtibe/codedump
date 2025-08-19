@@ -40,8 +40,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy({
-    "node_modules/@fontsource/urbanist/files/urbanist-latin-400-normal.woff":
-      "fonts/urbanist-latin-400-normal.woff",
+    "node_modules/@fontsource/urbanist/files/urbanist-latin-300-normal.woff":
+      "fonts/urbanist-latin-300-normal.woff",
   });
 
   eleventyConfig.addPassthroughCopy({
