@@ -3,7 +3,7 @@ layout: post.liquid
 title: Swiss "GuoGuessr"
 tags:
   - blog
-  - maps
+  - geo
 ---
 
 https://fredj.github.io/cesium-guess/
