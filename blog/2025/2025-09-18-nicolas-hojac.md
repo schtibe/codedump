@@ -1,6 +1,7 @@
 ---
 layout: post.liquid
 title: Nicolas Hojac
+description: Speed ascent climbing, breaking records in the mountains.
 tags:
   - blog
   - random
