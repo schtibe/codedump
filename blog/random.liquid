@@ -1,0 +1,23 @@
+---
+title: Random post
+---
+{% layout 'layout' %}
+
+{% block content %}
+
+<h1>Getting you to a random post...</h1>
+
+<!-- inspired by https://hamatti.org/posts/random-page-feature-for-a-static-site-with-eleventy/ -->
+<script>
+  const posts = [
+    {% for post in collections.blog %}"{{ post.url }}",{% endfor %}
+  ]
+
+  const random = posts[Math.floor(Math.random() * posts.length)];
+
+  setTimeout(() => {
+    window.location = `${window.location.origin}${random}`;
+  }, 1000);
+</script>
+
+{% endblock %}
