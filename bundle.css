@@ -246,8 +246,19 @@ blockquote:after {
   color: rgb(109, 108, 108);
 }
 
-
-
 s {
-text-decoration-thickness: 0.2rem;
+  text-decoration-thickness: 0.2rem;
+}
+
+footer {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: lightgray;
+  padding-top: 1rem;
+}
+
+footer > div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
 }
