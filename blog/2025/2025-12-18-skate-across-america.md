@@ -1,11 +1,11 @@
 ---
 layout: post.liquid
-title: Christiana Means with Dan Corrigan
+title: Skating across America
 videoKey: XFPZYeFmXCs
 previewImage: https://i3.ytimg.com/vi/XFPZYeFmXCs/maxresdefault.jpg
 tags:
   - blog
-  - skate
+  - skateboarding
 ---
 
 {% include 'ytplayer', videoKey: videoKey %}
