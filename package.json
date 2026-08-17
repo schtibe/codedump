@@ -11,7 +11,7 @@
     "markdown-it-attrs": "^5.0.1"
   },
   "devDependencies": {
-    "@shopify/prettier-plugin-liquid": "^1.5.0",
+    "@shopify/prettier-plugin-liquid": "^1.11.0",
     "markdown-it-eleventy-img": "^0.10.2",
     "prettier": "^3.9.6"
   }
