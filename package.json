@@ -4,7 +4,7 @@
     "serve": "eleventy --serve"
   },
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy": "^3.1.6",
     "@11ty/eleventy-img": "^7.0.0",
     "@fontsource/playfair-display": "^5.0.24",
     "@fontsource/urbanist": "^5.0.20",
