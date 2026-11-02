@@ -87,25 +87,25 @@ footer > div {
   margin: auto;
 }
 
-.blog > div {
+.tumbler > div {
   max-width: 768px;
   margin: auto;
 }
 
-.blog img {
+.tumbler img {
   max-width: 768px;
 }
 
-.blog section {
+.tumbler section {
   margin-top: 3rem;
 }
 
-.blog iframe {
+.tumbler iframe {
   margin-top: 1rem;
   max-width: 95%;
 }
 
-.blog .goBack {
+.tumbler .goBack {
   margin-top: 3rem;
 }
 

@@ -3,7 +3,7 @@
     {% assign taglist = tags | filterTagList %}
     {% for tag in taglist %}
       <li>
-        <a href="/blog/tags/{{ tag | slugify}}" class="post-tag">{{ tag }}</a>
+        <a href="/tumbler/tags/{{ tag | slugify}}" class="post-tag">{{ tag }}</a>
       </li>
     {% endfor %}
   </ul>
