@@ -1,6 +1,6 @@
 ---
 layout: post.liquid
-title: The last quiet thing
+title: Passive Income Trap
 tags:
   - tumbler
   - essays
